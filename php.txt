@@ -12,3 +12,4 @@ if (!$link) {
 if (mysqli_query($link,$sql)) {
 echo "Insert sucessful";
 }
+ducduhcuh
