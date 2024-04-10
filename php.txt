@@ -1,0 +1,20 @@
+<?php
+$username = "s2539340";
+$password = "s2539340";
+$database = "d2539340";
+
+
+$link = mysqli_connect("127.0.0.1", $username, $password, $database);
+$sql="insert into users values ('deded','shshi','dyd','udhb@hdi.com','21','osojo')";
+if (!$link) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+if (mysqli_query($link,$sql)) {
+echo "Insert sucessful";
+}
+else{
+echo "Error: " . $sql . "<br>" . mysqli_error($link);
+}
+
+mysqli_close($link);
+?>
