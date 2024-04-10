@@ -12,9 +12,3 @@ if (!$link) {
 if (mysqli_query($link,$sql)) {
 echo "Insert sucessful";
 }
-else{
-echo "Error: " . $sql . "<br>" . mysqli_error($link);
-}
-
-mysqli_close($link);
-?>
